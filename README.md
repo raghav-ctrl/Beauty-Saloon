@@ -4,8 +4,8 @@ GlowSpot Hyderabad is a premium, startup-style beauty salon and grooming marketp
 
 Designed with rich aesthetics, smooth micro-animations, and client-side database persistence, the platform mimics a fully functional, funded startup product rather than a simple hackathon demonstration.
 
-## 🚀 Live Link Placeholder
-- **Production URL**: [GlowSpot Hyderabad Platform](https://glowspot-hyderabad.vercel.app) *(Deploy Ready)*
+## 🚀 Live Link
+- **Production URL**: [GlowSpot Hyderabad Platform](https://raghav-ctrl.github.io/Beauty-Saloon/)
 
 ---
 

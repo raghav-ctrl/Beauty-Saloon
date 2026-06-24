@@ -30,7 +30,7 @@ function ScrollToTop() {
 export default function App() {
   return (
     <BookingProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
         <div class="min-h-screen flex flex-col bg-[#FAFAFA] font-sans selection:bg-rose-100 selection:text-primary-800">
           <Navbar />
