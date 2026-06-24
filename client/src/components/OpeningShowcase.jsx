@@ -76,7 +76,7 @@ export default function OpeningShowcase({ isClosing, onSkip }) {
             class="intro-copy__body intro-stagger-item text-sm sm:text-base font-light leading-relaxed"
             style={{ '--intro-order': 2 }}
           >
-            Each salon essential enters on its own beat and orbits in a beautiful circular motion, showcasing our curated treatments before the full site opens.
+            Each salon essential enters on its own beat and glides elegantly from left to right in a smooth carousel motion, showcasing our curated treatments before the full site opens.
           </p>
         </div>
 
