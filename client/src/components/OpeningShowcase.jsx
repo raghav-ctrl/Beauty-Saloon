@@ -8,14 +8,7 @@ const showcaseProducts = [
     accent: '#dba36e',
     shadow: 'rgba(219, 163, 110, 0.28)',
     order: 0,
-    startX: '-430px',
-    startY: '92px',
-    midX: '-132px',
-    midY: '-88px',
-    endX: '326px',
-    endY: '56px',
-    rotateStart: '-16deg',
-    rotateEnd: '12deg',
+    angle: 0,
   },
   {
     name: 'Nail Gloss',
@@ -23,14 +16,7 @@ const showcaseProducts = [
     accent: '#f2d6a2',
     shadow: 'rgba(242, 214, 162, 0.24)',
     order: 1,
-    startX: '-400px',
-    startY: '38px',
-    midX: '-58px',
-    midY: '-118px',
-    endX: '368px',
-    endY: '16px',
-    rotateStart: '-10deg',
-    rotateEnd: '14deg',
+    angle: 72,
   },
   {
     name: 'Styling Kit',
@@ -38,14 +24,7 @@ const showcaseProducts = [
     accent: '#dd8b72',
     shadow: 'rgba(221, 139, 114, 0.24)',
     order: 2,
-    startX: '-350px',
-    startY: '126px',
-    midX: '22px',
-    midY: '-104px',
-    endX: '406px',
-    endY: '72px',
-    rotateStart: '-18deg',
-    rotateEnd: '10deg',
+    angle: 144,
   },
   {
     name: 'Skin Elixir',
@@ -53,14 +32,7 @@ const showcaseProducts = [
     accent: '#7eb3a1',
     shadow: 'rgba(126, 179, 161, 0.22)',
     order: 3,
-    startX: '-316px',
-    startY: '10px',
-    midX: '98px',
-    midY: '-136px',
-    endX: '430px',
-    endY: '26px',
-    rotateStart: '-9deg',
-    rotateEnd: '18deg',
+    angle: 216,
   },
   {
     name: 'Spa Ritual',
@@ -68,14 +40,7 @@ const showcaseProducts = [
     accent: '#98c4b3',
     shadow: 'rgba(152, 196, 179, 0.22)',
     order: 4,
-    startX: '-274px',
-    startY: '118px',
-    midX: '146px',
-    midY: '-92px',
-    endX: '456px',
-    endY: '88px',
-    rotateStart: '-15deg',
-    rotateEnd: '9deg',
+    angle: 288,
   },
 ];
 
@@ -111,9 +76,7 @@ export default function OpeningShowcase({ isClosing, onSkip }) {
             class="intro-copy__body intro-stagger-item text-sm sm:text-base font-light leading-relaxed"
             style={{ '--intro-order': 2 }}
           >
-            Each salon essential enters on its own beat, glides through a curved
-            hover path, and then hands off to the Beauty Saloon tag before the
-            full site opens.
+            Each salon essential enters on its own beat and orbits in a beautiful circular motion, showcasing our curated treatments before the full site opens.
           </p>
         </div>
 
@@ -134,14 +97,7 @@ export default function OpeningShowcase({ isClosing, onSkip }) {
                   '--product-order': product.order,
                   '--product-accent': product.accent,
                   '--product-shadow': product.shadow,
-                  '--start-x': product.startX,
-                  '--start-y': product.startY,
-                  '--mid-x': product.midX,
-                  '--mid-y': product.midY,
-                  '--end-x': product.endX,
-                  '--end-y': product.endY,
-                  '--rotate-start': product.rotateStart,
-                  '--rotate-end': product.rotateEnd,
+                  '--start-angle': `${product.angle}deg`,
                 }}
               >
                 <div class="intro-product-icon">

@@ -560,8 +560,8 @@
   gap: 0.7rem;
   opacity: 0;
   will-change: transform, opacity;
-  animation: introProductTraverse 2.55s cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-delay: calc(900ms + (var(--product-order, 0) * 180ms));
+  animation: introProductOrbit 3.2s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation-delay: calc(400ms + (var(--product-order, 0) * 200ms));
 }
 
 .intro-product-icon {
@@ -697,28 +697,26 @@
   }
 }
 
-@keyframes introProductTraverse {
+@keyframes introProductOrbit {
   0% {
     opacity: 0;
-    transform: translate(calc(-50% + var(--start-x)), calc(-50% + var(--start-y))) scale(0.68) rotate(var(--rotate-start));
+    transform: translate(-50%, -50%) rotate(calc(var(--start-angle) - 90deg)) translateX(40px) rotate(calc(-1 * (var(--start-angle) - 90deg))) scale(0.2);
   }
-  12% {
+  15% {
     opacity: 1;
+    transform: translate(-50%, -50%) rotate(calc(var(--start-angle) - 45deg)) translateX(160px) rotate(calc(-1 * (var(--start-angle) - 45deg))) scale(1.1);
   }
-  46% {
+  25% {
     opacity: 1;
-    transform: translate(calc(-50% + var(--mid-x)), calc(-50% + var(--mid-y))) scale(1.02) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(calc(var(--start-angle))) translateX(140px) rotate(calc(-1 * var(--start-angle))) scale(1);
   }
-  74% {
+  80% {
     opacity: 1;
-    transform: translate(calc(-50% + var(--mid-x) + 148px), calc(-50% + var(--mid-y) + 72px)) scale(0.98) rotate(4deg);
-  }
-  86% {
-    opacity: 0.92;
+    transform: translate(-50%, -50%) rotate(calc(var(--start-angle) + 180deg)) translateX(140px) rotate(calc(-1 * (var(--start-angle) + 180deg))) scale(1);
   }
   100% {
     opacity: 0;
-    transform: translate(calc(-50% + var(--end-x)), calc(-50% + var(--end-y))) scale(0.84) rotate(var(--rotate-end));
+    transform: translate(-50%, -50%) rotate(calc(var(--start-angle) + 270deg)) translateX(200px) rotate(calc(-1 * (var(--start-angle) + 270deg))) scale(0.5);
   }
 }
 
